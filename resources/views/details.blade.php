@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-    My Todo App
+    Details
 @endsection
 @section('content')
 
