@@ -16,6 +16,10 @@
 
     <!-- Custom Css -->
     <link href="{{ mix('resources/css/app.css') }}" rel="stylesheet">
+ 
+    <!-- Vue Js -->
+      <script src="{{ mix('resources/js/app.js') }}"></script>
+
 
 
     <style>
@@ -25,7 +29,7 @@
     </style>
 </head>
 
-<body>
+<body id="app">
 
 <nav class="navbar navbar-light bg-light">
     <div class="container">
@@ -34,7 +38,7 @@
     </div>
 </nav>
 
-<div class="container">
+<div  class="container">
     @if(session()->has('success'))
         <div class="alert alert-success">
 
@@ -45,7 +49,10 @@
     
     @yield('content')
 
+    
 </div>
+
+<example-component />
 
 </body>
 
